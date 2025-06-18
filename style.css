@@ -1,0 +1,88 @@
+h1 {
+  font-size: 500%;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+p {
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: #551a8b;
+  display: inline-block;
+  animation: shake 2s infinite linear;
+  translate: 0px -5px;
+  font-size: 75%;
+}
+
+body {
+  background-color: #d8e2dc;
+  background-image: url("images/5016.png");
+  font-family: Itim;
+}
+
+.center {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 12%;
+}
+
+.projects {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15%;
+}
+
+.middle {
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  width: 35%;
+  text-align: right;
+  translate: -5px -35px;
+}
+
+.right {
+  float: right;
+  width: 65%;
+  text-align: left;
+  translate: 0px -15px;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-15deg);
+  }
+}
