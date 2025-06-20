@@ -11,16 +11,26 @@ h3 {
 }
 
 p {
-  font-size: 150%;
+  font-size: 100%;
 }
 
-a {
+.a {
   text-decoration: none;
   color: #551a8b;
   display: inline-block;
   animation: shake 1.5s infinite linear;
   translate: 0px -5px;
   font-size: 75%;
+}
+
+textarea {
+  resize: none;
+  width: 1000px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+  font-size: 150%;
 }
 
 body {
