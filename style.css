@@ -11,16 +11,8 @@ h3 {
 }
 
 p {
-  font-size: 100%;
-}
-
-.a {
-  text-decoration: none;
-  color: #551a8b;
-  display: inline-block;
-  animation: shake 1.5s infinite linear;
-  translate: 0px -5px;
-  font-size: 75%;
+  font-size: 125%;
+  font-weight: bold;
 }
 
 textarea {
@@ -37,6 +29,35 @@ body {
   background-color: #d8e2dc;
   background-image: url("images/5016.png");
   font-family: Itim;
+}
+
+.cloudOne {
+  transform: translateX(-100px);
+  animation: cloudOneMove 15s infinite linear;
+}
+
+.cloudTwo {
+  transform: translateX(-100px);
+  animation: cloudTwoMove 15s infinite linear;
+}
+
+.cloudThree {
+  transform: translateX(-100px);
+  animation: cloudThreeMove 25s infinite linear;
+}
+
+.cloudFour {
+  transform: translateX(-100px);
+  animation: cloudFourMove 17.5s infinite linear;
+}
+
+.a {
+  text-decoration: none;
+  color: #551a8b;
+  display: inline-block;
+  animation: shake 1.5s infinite linear;
+  translate: 0px -5px;
+  font-size: 75%;
 }
 
 .center {
@@ -58,6 +79,15 @@ body {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 15%;
+}
+
+.webrings {
+  transform: translateY(725px);
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .middle {
@@ -91,12 +121,65 @@ body {
   animation: spin 5s infinite linear, colorchange 5s infinite linear;
 }
 
+.cloud {
+  position: absolute;
+}
+
 @keyframes colorchange {
   0% {
     filter: hue-rotate(0deg) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
   }
   100% {
     filter: hue-rotate(360deg) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+  }
+}
+
+@keyframes cloudOneMove {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(-2000px);
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes cloudTwoMove {
+  0% {
+    transform: translateX(-500px);
+  }
+  15% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(-2000px);
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes cloudThreeMove {
+  0% {
+    transform: translateX(-750px);
+  }
+  15% {
+    transform: translateX(-750px);
+  }
+  100% {
+    transform: translateX(-2500px);
+    transform: translateX(2500px);
+  }
+}
+
+@keyframes cloudFourMove {
+  0% {
+    transform: translateX(-750px);
+  }
+  15% {
+    transform: translateX(-750px);
+  }
+  100% {
+    transform: translateX(-2500px);
+    transform: translateX(2500px);
   }
 }
 
