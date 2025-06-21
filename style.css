@@ -48,7 +48,7 @@ body {
 
 .cloudFour {
   transform: translateX(-100px);
-  animation: cloudFourMove 17.5s infinite linear;
+  animation: cloudFourMove 12s infinite linear;
 }
 
 .a {
