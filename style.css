@@ -46,11 +46,6 @@ body {
   animation: cloudThreeMove 25s infinite linear;
 }
 
-.cloudFour {
-  transform: translateX(-100px);
-  animation: cloudFourMove 12s infinite linear;
-}
-
 .a {
   text-decoration: none;
   color: #551a8b;
@@ -125,6 +120,11 @@ body {
   position: absolute;
 }
 
+.buildings {
+  position: absolute;
+  transform: translate(0px, 550px);
+}
+
 @keyframes colorchange {
   0% {
     filter: hue-rotate(0deg) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
@@ -158,19 +158,6 @@ body {
 }
 
 @keyframes cloudThreeMove {
-  0% {
-    transform: translateX(-750px);
-  }
-  15% {
-    transform: translateX(-750px);
-  }
-  100% {
-    transform: translateX(-2500px);
-    transform: translateX(2500px);
-  }
-}
-
-@keyframes cloudFourMove {
   0% {
     transform: translateX(-750px);
   }
